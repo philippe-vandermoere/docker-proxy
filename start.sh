@@ -64,5 +64,9 @@ echo "PROXY_PROVIDER=${proxy_provider}" >> ${SCRIPT_DIRECTORY}/.env
 echo "PROXY_PROVIDER_VERSION=${proxy_provider_version}" >> ${SCRIPT_DIRECTORY}/.env
 
 cd ${SCRIPT_DIRECTORY}
+if [[ "${nginx_version}" == "latest" ]] || [[ "${proxy_provider_version}" == "latest" ]]; then
+    docker-compose pull
+fi
+
 docker-compose up --detach --renew-anon-volumes --remove-orphans
 cd ${CURRENT_DIRECTORY}
