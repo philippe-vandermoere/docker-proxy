@@ -54,6 +54,7 @@ You can see the list of containers managed by proxy on http://127.0.0.1:${HTTP_P
 - `com.docker-proxy.certificate-provider.reference`: Define the git reference (default: master).
 - `com.docker-proxy.certificate-provider.certificate_path`: Define the path of certificate (require).
 - `com.docker-proxy.certificate-provider.private_key_path`: Define the path of private key (require).
+- `com.docker-proxy.certificate-provider.certificate_chain_path`: Define the path of certificate chain (optional).
 
 ### Examples
 
