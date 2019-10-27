@@ -42,7 +42,7 @@ You can see the list of containers managed by proxy on http://127.0.0.1:${HTTP_P
 - `com.docker-proxy.domain`: Define the domain of your service (require).
 - `com.docker-proxy.port`: Define the http port of your service (default 80).
 - `com.docker-proxy.path`: Define the domain path of your service (default /).
-- `com.docker-proxy.sslcom.docker-proxy.ssl`: Define if you need https (default: false).
+- `com.docker-proxy.ssl`: Define if you need https (default: false).
 
 ### Certificate provider Configuration
 
